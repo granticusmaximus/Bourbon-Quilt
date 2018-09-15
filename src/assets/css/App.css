@@ -3,6 +3,113 @@ html * {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  width: 980px;
+}
+
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  border-radius: 4px;
+  background-color: #0066ff;
+  color: #fff;
+  border: 2px solid #0066ff;
+}
+.todoListMain .header button:hover {
+  background-color: #003399;
+  border: 2px solid #003399;
+  cursor: pointer;
+}
+.todoListMain .theList {
+  list-style: none;
+  padding-left: 0;
+  width: 1000px;
+}
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(245, 240, 240, 0.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+}
+
+.todoListMain .theList li:hover {
+  background-color: rgb(88, 81, 199);
+  color: white;
+  cursor: pointer;
+}
+ul.theList {
+  padding: 0;
+}
+
+.flash-container {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top: 10%;
+  background: white;
+  color: rgb(198, 79, 79);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13);
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  z-index: 100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.6px;
+}
+
+@media only screen and (max-width: 500px) {
+  .flash-container {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -150px;
+    top: 10%;
+    background: white;
+    color: rgb(198, 79, 79);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    z-index: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* list.css */
+.list-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 20px;
+}
+
 body {
   background-color: #76869b;
   color: #3c4858;

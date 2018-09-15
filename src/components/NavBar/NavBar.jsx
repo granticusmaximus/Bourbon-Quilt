@@ -13,6 +13,7 @@ import HomePage from "../../layouts/Frontend/Home/Home";
 import DashBoard from "../../layouts/Dashboard/Users/Dashboard";
 import AboutPage from "../../layouts/Frontend/About/AboutPage";
 import ContactPage from "../../layouts/Frontend/Contect/Contact";
+import { ToDoPage } from "../../layouts/Frontend/ToDoPage/ToDoPage";
 
 export default class NaviRoute extends React.Component {
   constructor(props) {
@@ -51,6 +52,11 @@ export default class NaviRoute extends React.Component {
               <li>
                 <Link to={"/contact"} className="nav-link">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link to={"/todo"} className="nav-link">
+                  ToDo List
                 </Link>
               </li>
               <UncontrolledDropdown>
@@ -118,6 +124,7 @@ export default class NaviRoute extends React.Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/contact" component={ContactPage} />
             <Route path="/dashboard" component={DashBoard} />
+            <Route path="/todo" component={ToDoPage} />
           </Switch>
         </div>
       </Router>
