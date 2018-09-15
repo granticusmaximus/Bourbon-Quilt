@@ -1,10 +1,10 @@
 import "../../assets/css/App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Profile from "../../layouts/Dashboard/User/UserProfile";
-import Messages from "../../layouts/Dashboard/User/UserMessage";
-import Friends from "../../layouts/Dashboard/User/UserFriends";
-import EditProfile from "../../layouts/Dashboard/User/UserEditProfile";
+import Profile from "../../layouts/Dashboard/Users/UserProfile";
+import Messages from "../../layouts/Dashboard/Users/UserMessage";
+import Friends from "../../layouts/Dashboard/Users/UserFriends";
+import EditProfile from "../../layouts/Dashboard/Users/UserEditProfile";
 
 
 const SideBar = () => (

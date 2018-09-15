@@ -23,6 +23,10 @@ class LoginPage extends Component {
     });
   };
 
+  loginCheck = event => {
+    return 
+  }
+
   handleSubmit = event => {
     event.preventDefault();
   };
@@ -58,6 +62,7 @@ class LoginPage extends Component {
                 bsSize="large"
                 disabled={!this.validateForm()}
                 type="submit"
+                onClick={this.loginCheck()}
               >
                 Login
               </Button>

@@ -7,12 +7,12 @@ import {
   DropdownItem,
   ButtonDropdown
 } from "reactstrap";
-import LoginPage from "../../layouts/Login/Login";
+import LoginPage from "../../layouts/Login/LoginPage";
 import RegistrationPage from "../../layouts/Registration/Registration";
 import HomePage from "../../layouts/Frontend/Home/Home";
-import DashBoard from "../../layouts/Dashboard/User/Dashboard";
-import AboutPage from "../../layouts/Frontend/About/About";
-import ContactPage from "../../layouts/Frontend/Contact/Contact";
+import DashBoard from "../../layouts/Dashboard/Users/Dashboard";
+import AboutPage from "../../layouts/Frontend/About/AboutPage";
+import ContactPage from "../../layouts/Frontend/Contect/Contact";
 
 export default class NaviRoute extends React.Component {
   constructor(props) {
@@ -30,7 +30,6 @@ export default class NaviRoute extends React.Component {
     });
   }
   render() {
-    setState(updater[callback])
     return (
       <Router>
         <div>
