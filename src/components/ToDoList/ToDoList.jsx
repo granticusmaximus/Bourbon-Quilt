@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TodoItems from "../ToDoItems/ToDoItems";
 import * as moment from "moment";
+import {Jumbotron} from "reactstrap";
 
 class TodoList extends Component {
   constructor(props) {
@@ -47,9 +48,8 @@ class TodoList extends Component {
         <div className="todoListMain">
           <div className="header">
             <div className={"text-xs-center center text-center centering"}>
-              <div className={"alert alert-info"}>
-                <p>{moment().format("MMM Do YY")}</p>
-              </div>
+              <p>{moment().format("MMM Do YY")}</p>
+              <p>Grant's ToDo List</p>
             </div>
             <form onSubmit={this.addItem}>
               <input
@@ -59,8 +59,10 @@ class TodoList extends Component {
               <button type="submit">Add Item</button>
             </form>
           </div>
-          <TodoItems entries={this.state.items} delete={this.deleteItem} />
         </div>
+        <Jumbotron>
+          <TodoItems entries={this.state.items} delete={this.deleteItem} />
+        </Jumbotron>
       </div>
     );
   }
